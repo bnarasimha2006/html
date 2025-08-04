@@ -2,47 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Semantic HTML Example</title>
+    <title>HTML5 Semantic Elements Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, footer, nav, main, article, aside, section {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+        }
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <h1>ARTICALS</h1>
+    <h1>My Website</h1>
+    <p>Welcome to <span class="highlight">HTML5</span> semantic layout</p>
 </header>
 
 <nav>
     <ul>
-        <li><a href="https://www.wikihow.com/images/thumb/f/f5/Set-Homepage-in-Google-Chrome-Step-2-Version-4.jpg/v4-460px-Set-Homepage-in-Google-Chrome-Step-2-Version-4.jpg">Home</a></li>
-        <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXXCTv_E9yX2Q1LXhK7lTChi6srPJcHP_U0A&s">Articles</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
     </ul>
 </nav>
 
 <main>
     <section>
+        <h2>Web Development Articles</h2>
         <article>
             <header>
-                <h2>Read Articals</h2>
+                <h3>Getting Started with HTML5</h3>
             </header>
+            <p>This article discusses the basics of HTML5 and its semantic elements.</p>
             <figure>
-                <img src="html5-logo.png" alt="HTML5 Logo" width="100">
-                <figcaption>Figure: HTML5 Logo</figcaption>
+                <img src="html5-logo.png" alt="HTML5 Logo" width="150">
+                <figcaption>HTML5 Logo</figcaption>
             </figure>
-            <p>This article explains the structure of HTML5.</p>
         </article>
     </section>
 
     <aside>
-        <h3>Related Links</h3>
-        <ul>
-            <li><a href="#">CSS Basics</a></li>
-            <li><a href="#">Web Design Tips</a></li>
-        </ul>
+        <h3>Sidebar Content</h3>
+        <p>Tips, links, and short notes related to web development.</p>
     </aside>
+
+    <section>
+        <div>
+            <p>This is a <span class="highlight">div</span> containing a <span>span</span> element for inline styling.</p>
+        </div>
+    </section>
 </main>
 
 <footer>
-    <p>&copy; 2025 My Blog. All rights reserved.</p>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
 </footer>
 
 </body>
